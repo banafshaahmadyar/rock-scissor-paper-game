@@ -33,7 +33,7 @@ for num in range(1, lap+1):
         print("player choies scissor")
         #player_score +=1
         
-    #in all game we have three choies and six compear     
+#in all game we have three choies and eight compear and one out of compear    
     if player == "rock" and user == "paper":
         print("user win")
     elif player == "rock" and user == "scissor":
@@ -46,8 +46,14 @@ for num in range(1, lap+1):
         print("player win")
     elif player == "scissor" and user == "rock":
         print("user win")
-    else:
+    elif player == "scissor" and user == "siccor":
         print("equals !!!")
+    elif player == "rock" and user == "rock":
+        print("equals !!!")
+    elif player == "paper" and user == "paper":
+        print("equals !!!")    
+    else:
+        print("Ooops try again !!!")
 
 #print(f"user{user_score} win ")
 #print(f"player{player_score} win")
