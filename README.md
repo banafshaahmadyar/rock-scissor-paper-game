@@ -1,8 +1,8 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## ROCK...PAPER...SCISSOR
+  *This is a simply game that playing btween to persion player and user 
+  *user should chooes form this three choies
 
-Welcome banafshaahmadyar,
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 
 ## Reminders
 
