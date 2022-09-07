@@ -46,6 +46,9 @@ The rules are straightforward:
 ## AND FINAL RESULT
 
   ![image](https://user-images.githubusercontent.com/100950189/188875608-95e2618a-6bee-49d5-a8f9-ea60e3bff3ba.png)
+  
+  ![image](https://user-images.githubusercontent.com/100950189/188900044-1c2e5f1c-26b8-4f1b-8b8e-18849a5952cc.png)
+
 
 ## Testing
      I have manually tested my application by running it on the command prompt. inserting a value and see the result.
