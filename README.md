@@ -47,4 +47,12 @@ The rules are straightforward:
 
   ![image](https://user-images.githubusercontent.com/100950189/188875608-95e2618a-6bee-49d5-a8f9-ea60e3bff3ba.png)
 
+## Testing
+     I have manually tested my application by running it on the command prompt. inserting a value and see the result.
+     I tested my python code on pep8online.com website, fixed some issues and below is the result after.
+     ![image](https://user-images.githubusercontent.com/100950189/188893884-bcdbc9af-98a2-4691-82a9-a73d27c8b07f.png)
+
+## Deployment
+      The deployment of the project is done on HeroKu application and the link for the live link is:
+
    
