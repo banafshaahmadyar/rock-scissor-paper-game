@@ -50,7 +50,7 @@ The rules are straightforward:
 ## Testing
      I have manually tested my application by running it on the command prompt. inserting a value and see the result.
      I tested my python code on pep8online.com website, fixed some issues and below is the result after.
-     ![image](https://user-images.githubusercontent.com/100950189/188893884-bcdbc9af-98a2-4691-82a9-a73d27c8b07f.png)
+![image](https://user-images.githubusercontent.com/100950189/188897586-d4eeefe5-42f0-4574-8d57-d2b1afe6445e.png)
 
 ## Deployment
       The deployment of the project is done on HeroKu application and the link for the live link is: https://rock-paper-scissor-game1.herokuapp.com/
