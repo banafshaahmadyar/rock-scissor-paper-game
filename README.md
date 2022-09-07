@@ -53,6 +53,6 @@ The rules are straightforward:
      ![image](https://user-images.githubusercontent.com/100950189/188893884-bcdbc9af-98a2-4691-82a9-a73d27c8b07f.png)
 
 ## Deployment
-      The deployment of the project is done on HeroKu application and the link for the live link is:
+      The deployment of the project is done on HeroKu application and the link for the live link is: https://rock-paper-scissor-game1.herokuapp.com/
 
    
