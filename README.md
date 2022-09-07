@@ -21,24 +21,7 @@ The rules are straightforward:
    
        ![image](https://user-images.githubusercontent.com/100950189/188866105-91ec1519-c94a-4506-b0c1-133133121e40.png)    
 
-## The Flow(chart) of ROCK_SCISSOR_PAPER
-      
-      Here’s flowchart of rock paper scissors game:
-      
-   ![image](https://user-images.githubusercontent.com/100950189/188867657-354e9c65-1cfd-4ca1-81eb-4dc386edcbe2.png)   
-   
-  ![image](https://user-images.githubusercontent.com/100950189/188867762-629a7e83-79e5-4289-95fc-bc13a652454c.png)      
-      
-  ![image](https://user-images.githubusercontent.com/100950189/188867879-0b258c47-f346-4d9d-afa7-b6aaab0243be.png)  
-  
-   - Rock Paper Scissors … Lizard Spock
-  
-![image](https://user-images.githubusercontent.com/100950189/188868008-d66e69fb-2fa5-4b42-b10b-54e16c73e594.png)
-
-
 ## Play a Single Game of Rock Paper Scissors in Python
-
-      * You’re going to need to import the module you’ll use to simulate the computer’s choices:
       
    ![image](https://user-images.githubusercontent.com/100950189/188869275-d4672bbb-ec35-437b-8462-597dbc055525.png)
    
