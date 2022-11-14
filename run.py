@@ -5,7 +5,7 @@ computer_score = 0
 
 
 def Select_option():
-    player_option = input("Chooes rock, scissors or paper:  \n")
+    player_option = input("Chooes rock, scissors or paper: ")
     if player_option in ["ROck", "rock", 'R', 'r']:
         player_option = "r"
     elif player_option in ["Paper", "paper", 'P', 'p']:
@@ -13,7 +13,7 @@ def Select_option():
     elif player_option in ["Scissor", "scissor", 'S', 's']:
         player_option = "s"
     else:
-        print("Enter a valid value ")
+        print("     Enter a valid value ")
         Select_option()
     return player_option
 
@@ -31,54 +31,54 @@ def Computer_option():
 
 
 while True:
-    print("")
+    print("___________________________________________________________")
 
     player_option = Select_option()
     computer_select = Computer_option()
 
-    print("")
+    print("__________________________________________________________")
     if player_option == "p":
         if computer_select == "r":
-            print("You select paper, Computer select rock. You win (: ")
+            print("     You select paper, Computer select rock. You win (: ")
             player_score += 1
 
         elif computer_select == "p":
-            print("You select paper, The computer select paper. You are alike );")
+            print("     You select paper, The computer select paper. You are alike ")
 
         elif computer_select == "s":
-            print("You select paper, The computer select scissor. You loss ): ")
+            print("     You select paper, The computer select scissor. You loss ): ")
             computer_score += 1
 
     elif player_option == "r":
         if computer_select == "r":
-            print("You select rock, Computer select rock. you are alike : ")
+            print("     You select rock, Computer select rock. you are alike : ")
 
         elif computer_select == "s":
-            print("You select rock , The computer select scissor . You loss  );")
+            print("     You select rock , The computer select scissor . You loss  );")
             computer_score += 1
 
         elif computer_select == "p":
-            print("You select rock, The computer select paper. You win (: ")
+            print("     You select rock, The computer select paper. You win (: ")
             player_score += 1
 
     elif player_option == "s":
-        if computer_select == "s":
-            print("You select scissor, The computer select scissor. You are alike")
-
-        elif computer_select == "p":
-            print("You are select is scissor, The computer select is paper. You win (: ")
-            player_score += 1
-
-        elif computer_select == "r":
-            print("Your select is scissor, The computer select is rock. You loss ); ")
+        if computer_select== "r":
+            print("     You chose scissors. The computer chose rock. You lose ):")
             computer_score += 1
 
+        elif computer_select == "p":
+            print("     You chose scissors. The computer chose paper. You win (:")
+            player_score += 1
+
+        elif computer_select == "s":
+            print("     You chose scissors. The computer chose scissors. You tied.")
+
     print("")
-    print("Player score = " + str(player_score))
-    print("user score = " + str(computer_score))
+    print("         Player score = " + str(player_score))
+    print("         user score = " + str(computer_score))
     print("")
 
-    User_Choies = input("Wanna play agian ?(Y/N)")
+    User_Choies = input("       Wanna play agian ?(Y/N)")
     if User_Choies in ["yes", "Yes", "y", "Y"]:
         pass
     elif User_Choies in ["NO", "no", "N", "n"]:
