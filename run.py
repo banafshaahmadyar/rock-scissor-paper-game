@@ -109,6 +109,7 @@ while True:
     if result == False:
         print("Invalid Data entered")
         pass
+    #Calculating from both side score and show the result
     else:
         player_score = player_score + int(result[0])
         computer_score = computer_score + int(result[1])
