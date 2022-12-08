@@ -4,18 +4,30 @@ player_score = 0
 computer_score = 0
 
 
-def Select_option():
-    player_option = input("Chooes rock, scissors or paper: ")
-    if player_option in ["ROck", "rock", 'R', 'r']:
-        player_option = "r"
-    elif player_option in ["Paper", "paper", 'P', 'p']:
-        player_option = "p"
-    elif player_option in ["Scissor", "scissor", 'S', 's']:
-        player_option = "s"
+def select_option():
+
+    while True:
+        player_option = input("Chooes rock, scissors or paper: ")
+        if validate_user_value(player_option):
+            return get_user_output(player_option)
+
+
+def validate_user_value(value):
+    if value in ["ROck", "rock", 'R', 'r', "Paper", "paper", 'P', 'p', "Scissor", "scissor", 'S', 's']:
+        return True
     else:
-        print("     Enter a valid value ")
-        Select_option()
-    return player_option
+        print("Enter a valid value")
+        return False
+
+
+def get_user_output(value):
+    if value in ["ROck", "rock", 'R', 'r']:
+        result = "r"
+    elif value in ["Paper", "paper", 'P', 'p']:
+        result = "p"
+    elif value in ["Scissor", "scissor", 'S', 's']:
+        result = "s"
+    return result
 
 
 def Computer_option():
@@ -30,58 +42,84 @@ def Computer_option():
     return computer_select
 
 
-while True:
-    print("___________________________________________________________")
+def check_computer_result(user, computer):
 
-    player_option = Select_option()
-    computer_select = Computer_option()
+    message = ""
+    user_output = ""
+    computer_output = ""
+    status = ""
+    p_score = 0
+    c_score = 0
 
-    print("__________________________________________________________")
-    if player_option == "p":
-        if computer_select == "r":
-            print("     You select paper, Computer select rock. You win (: ")
-            player_score += 1
-
-        elif computer_select == "p":
-            print("     You select paper, The computer select paper. You are alike ")
-
-        elif computer_select == "s":
-            print("     You select paper, The computer select scissor. You loss ): ")
-            computer_score += 1
-
-    elif player_option == "r":
-        if computer_select == "r":
-            print("     You select rock, Computer select rock. you are alike : ")
-
-        elif computer_select == "s":
-            print("     You select rock , The computer select scissor . You loss  );")
-            computer_score += 1
-
-        elif computer_select == "p":
-            print("     You select rock, The computer select paper. You win (: ")
-            player_score += 1
-
-    elif player_option == "s":
-        if computer_select== "r":
-            print("     You chose scissors. The computer chose rock. You lose ):")
-            computer_score += 1
-
-        elif computer_select == "p":
-            print("     You chose scissors. The computer chose paper. You win (:")
-            player_score += 1
-
-        elif computer_select == "s":
-            print("     You chose scissors. The computer chose scissors. You tied.")
-
-    print("")
-    print("         Player score = " + str(player_score))
-    print("         user score = " + str(computer_score))
-    print("")
-
-    User_Choies = input("       Wanna play agian ?(Y/N)")
-    if User_Choies in ["yes", "Yes", "y", "Y"]:
-        pass
-    elif User_Choies in ["NO", "no", "N", "n"]:
-        break
+    if user == "r":
+        if computer == "r":
+            status = "alike"
+        elif computer == "p":
+            status = "win"
+            p_score += 1
+        elif computer == "s":
+            status = "lose"
+            c_score += 1
+        user_output = "Rock"
+    elif user == "p":
+        if computer == "r":
+            status = "win"
+            p_score += 1
+        elif computer == "p":
+            status = "alike"
+        elif computer == "s":
+            status = "lose"
+            c_score += 1
+        user_output = "Paper"
+    elif user == "s":
+        if computer == "r":
+            status = "win"
+            p_score += 1
+        elif computer == "p":
+            status = "lose"
+            c_score += 1
+        elif computer == "s":
+            status = "alike"
+        user_output = "scissor"
     else:
-        break
+        return False
+
+    if computer == "r":
+        computer_output = "Rock"
+    elif computer == "p":
+        computer_output = "Paper"
+    elif computer == "s":
+        computer_output = "scissor"
+
+    message = f"      You select {user_output}, Computer Selected {computer_output}. You {status}"
+    print(message)
+    return [p_score, c_score]
+
+
+while True:
+
+    computer_select = Computer_option()
+    print("===================================================================")
+    player_option = select_option()
+
+    result = check_computer_result(player_option, computer_select)
+    if result == False:
+        print("Invalid Data entered")
+        pass
+    else:
+        player_score = player_score + int(result[0])
+        computer_score = computer_score + int(result[1])
+        print("")
+        print("         Player score = " + str(player_score))
+        print("         user score = " + str(computer_score))
+        print("")
+    print("===================================================================")
+
+    if result != False:
+        User_Choies = input("       Wanna play agian ?(Y/N)")
+        if User_Choies in ["yes", "Yes", "y", "Y"]:
+            pass
+        elif User_Choies in ["NO", "no", "N", "n"]:
+            break
+        else:
+            break
