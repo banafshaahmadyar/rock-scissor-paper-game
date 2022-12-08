@@ -3,24 +3,36 @@ import random
 player_score = 0
 computer_score = 0
 
-#This function cheking value that entered from user if True run the program else rollback 
+
 def select_option():
+    """
+    This function cheking value that entered from user 
+    if True run the program else rollback 
+    """
 
     while True:
         player_option = input("Chooes rock, scissors or paper: ")
         if validate_user_value(player_option):
             return get_user_output(player_option)
 
-#Here limited values form user
+
+
 def validate_user_value(value):
+    """
+    Here limited values form user
+    """
     if value in ["ROck", "rock", 'R', 'r', "Paper", "paper", 'P', 'p', "Scissor", "scissor", 'S', 's']:
         return True
     else:
         print("Enter a valid value")
         return False
 
-#This fuction show player choies check user input that is it in limited value
+
+
 def get_user_output(value):
+    """
+    This fuction show player choies check user input that is it in limited value
+    """
     if value in ["ROck", "rock", 'R', 'r']:
         result = "r"
     elif value in ["Paper", "paper", 'P', 'p']:
@@ -29,8 +41,12 @@ def get_user_output(value):
         result = "s"
     return result
 
-#This function show computer choies 
+
+
 def Computer_option():
+    """
+    This function show computer choies
+    """
     computer_select = random.randint(1, 3)
     if computer_select == 1:
         computer_select = "r"
@@ -41,16 +57,20 @@ def Computer_option():
         Computer_option()
     return computer_select
 
-# This function calculate input from player and compering that input with computer choies
+
+
 def check_computer_result(user, computer):
 
+    """
+    This function calculate input from player and compering that input with computer choies
+    """
     message = ""
     user_output = ""
     computer_output = ""
     status = ""
     p_score = 0
     c_score = 0
-    #Here if user select Rock then compering this input with computer choies
+    # Here if user select Rock then compering this input with computer choies
     if user == "r":
         if computer == "r":
             status = "alike"
@@ -61,7 +81,7 @@ def check_computer_result(user, computer):
             status = "lose"
             c_score += 1
         user_output = "Rock"
-     #Here if user select Paper then compering it with computer choies   
+     # Here if user select Paper then compering it with computer choies
     elif user == "p":
         if computer == "r":
             status = "win"
@@ -72,7 +92,7 @@ def check_computer_result(user, computer):
             status = "lose"
             c_score += 1
         user_output = "Paper"
-    #Here if user select Scissor then compering it with computer choies    
+    # Here if user select Scissor then compering it with computer choies
     elif user == "s":
         if computer == "r":
             status = "win"
@@ -83,7 +103,7 @@ def check_computer_result(user, computer):
         elif computer == "s":
             status = "alike"
         user_output = "scissor"
-    #Else of this conditions are false So program rollback and player should enter a valid value    
+    # Else of this conditions are false So program rollback and player should enter a valid value
     else:
         return False
 
@@ -93,12 +113,13 @@ def check_computer_result(user, computer):
         computer_output = "Paper"
     elif computer == "s":
         computer_output = "scissor"
-    #Here show us output 
+    # Here show us output
     message = f"      You select {user_output}, Computer Selected {computer_output}. You {status}"
     print(message)
     return [p_score, c_score]
 
-#In this while if all conditions are True show us result and score of both side
+ # In this while if all conditions are True show us result and score of both side
+
 while True:
 
     computer_select = Computer_option()
@@ -109,7 +130,7 @@ while True:
     if result == False:
         print("Invalid Data entered")
         pass
-    #Calculating from both side score and show the result
+    # Calculating from both side score and show the result
     else:
         player_score = player_score + int(result[0])
         computer_score = computer_score + int(result[1])
@@ -118,7 +139,7 @@ while True:
         print("         user score = " + str(computer_score))
         print("")
     print("===================================================================")
-    #Here if player wanna play again or not 
+    # Here if player wanna play again or not
     if result != False:
         User_Choies = input("       Wanna play agian ?(Y/N)")
         if User_Choies in ["yes", "Yes", "y", "Y"]:
@@ -127,3 +148,4 @@ while True:
             break
         else:
             break
+# End of game(:
