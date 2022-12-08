@@ -3,7 +3,7 @@ import random
 player_score = 0
 computer_score = 0
 
-
+#This function cheking value that entered from user if True run the program else rollback 
 def select_option():
 
     while True:
@@ -11,7 +11,7 @@ def select_option():
         if validate_user_value(player_option):
             return get_user_output(player_option)
 
-
+#Here limited values form user
 def validate_user_value(value):
     if value in ["ROck", "rock", 'R', 'r', "Paper", "paper", 'P', 'p', "Scissor", "scissor", 'S', 's']:
         return True
@@ -19,7 +19,7 @@ def validate_user_value(value):
         print("Enter a valid value")
         return False
 
-
+#This fuction show player choies check user input that is it in limited value
 def get_user_output(value):
     if value in ["ROck", "rock", 'R', 'r']:
         result = "r"
@@ -29,7 +29,7 @@ def get_user_output(value):
         result = "s"
     return result
 
-
+#This function show computer choies 
 def Computer_option():
     computer_select = random.randint(1, 3)
     if computer_select == 1:
@@ -41,7 +41,7 @@ def Computer_option():
         Computer_option()
     return computer_select
 
-
+# This function calculate input from player and compering that input with computer choies
 def check_computer_result(user, computer):
 
     message = ""
@@ -50,7 +50,7 @@ def check_computer_result(user, computer):
     status = ""
     p_score = 0
     c_score = 0
-
+    #Here if user select Rock then compering this input with computer choies
     if user == "r":
         if computer == "r":
             status = "alike"
@@ -61,6 +61,7 @@ def check_computer_result(user, computer):
             status = "lose"
             c_score += 1
         user_output = "Rock"
+     #Here if user select Paper then compering it with computer choies   
     elif user == "p":
         if computer == "r":
             status = "win"
@@ -71,6 +72,7 @@ def check_computer_result(user, computer):
             status = "lose"
             c_score += 1
         user_output = "Paper"
+    #Here if user select Scissor then compering it with computer choies    
     elif user == "s":
         if computer == "r":
             status = "win"
@@ -81,6 +83,7 @@ def check_computer_result(user, computer):
         elif computer == "s":
             status = "alike"
         user_output = "scissor"
+    #Else of this conditions are false So program rollback and player should enter a valid value    
     else:
         return False
 
@@ -90,12 +93,12 @@ def check_computer_result(user, computer):
         computer_output = "Paper"
     elif computer == "s":
         computer_output = "scissor"
-
+    #Here show us output 
     message = f"      You select {user_output}, Computer Selected {computer_output}. You {status}"
     print(message)
     return [p_score, c_score]
 
-
+#In this while if all conditions are True show us result and score of both side
 while True:
 
     computer_select = Computer_option()
@@ -114,7 +117,7 @@ while True:
         print("         user score = " + str(computer_score))
         print("")
     print("===================================================================")
-
+    #Here if player wanna play again or not 
     if result != False:
         User_Choies = input("       Wanna play agian ?(Y/N)")
         if User_Choies in ["yes", "Yes", "y", "Y"]:
