@@ -59,7 +59,9 @@ I have manually tested this project by doing the following steps:
 * No error on PEP9
 
 <img width="825" alt="image" src="https://user-images.githubusercontent.com/100950189/206900250-06e36eae-d078-497d-87bf-05de612b139f.png">
+
 ## Deployment
+
 ---
 This project was deployed in github and then Heroku
 
