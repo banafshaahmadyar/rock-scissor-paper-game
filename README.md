@@ -36,4 +36,7 @@ The rules are straightforward:
    * After that will Increase and decrease scores of winner and losser
    * At the end ask from player that wanna play again or no
 
+<img width="545" alt="image" src="https://user-images.githubusercontent.com/100950189/206897696-c9eaab3c-a0a2-4827-a317-27360ec8d0eb.png">
+
+
    
