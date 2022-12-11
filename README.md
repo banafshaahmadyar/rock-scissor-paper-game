@@ -19,7 +19,7 @@ The rules are straightforward:
    - Scissors cut paper.
    
    
-    <img width="942" alt="image" src="https://user-images.githubusercontent.com/100950189/206896619-755a6459-dcae-4e9b-a18b-db3bb129bd73.png">
+   <img width="942" alt="image" src="https://user-images.githubusercontent.com/100950189/206896619-755a6459-dcae-4e9b-a18b-db3bb129bd73.png">
 ## Play a Single Game of Rock Paper Scissors in Python
       
    ![image](https://user-images.githubusercontent.com/100950189/188869275-d4672bbb-ec35-437b-8462-597dbc055525.png)
