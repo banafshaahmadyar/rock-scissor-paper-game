@@ -27,10 +27,13 @@ The rules are straightforward:
    The rock is a closed fist; paper is a flat hand with fingers and thumb extended and the palm facing downward;
    and scissors is a fist with the index and middle fingers fully extended toward the opposing player.
    Rock wins against scissors; paper wins against rock; and scissors wins against paper.
-   If both players throw the same hand signal, it is considered a tie, and play resumes until there is a clear winner.
-   
-   
-   
+   If both players throw the same hand signal, it is considered a tie, and play resumes until there is a clear winner. 
    ---
+   
+   ## Existing feather
+   * This will stared with some limited values form player and player select form that choice
+   * THen it will comare player choice with computer choice and show result
+   * After that will Increase and decrease scores of winner and losser
+   * At the end ask from player that wanna play again or no
 
    
