@@ -39,6 +39,7 @@ The rules are straightforward:
 <img width="545" alt="image" src="https://user-images.githubusercontent.com/100950189/206897696-c9eaab3c-a0a2-4827-a317-27360ec8d0eb.png">
 
 ## Data Model
+
 ---
 This game is singal player game that one side is player and other side is computer.
 Then will compare both side and show result.
