@@ -57,8 +57,7 @@ I have manually tested this project by doing the following steps:
 * PEP8
 * No error on PEP9
 
-<img width="912" alt="Screenshot 2022-12-10 152734" src="https://user-images.githubusercontent.com/100950189/206898543-ff43ce8b-70ef-4dc2-a594-90233990c3a4.png">
-
+<img width="825" alt="image" src="https://user-images.githubusercontent.com/100950189/206900250-06e36eae-d078-497d-87bf-05de612b139f.png">
 ## Deployment
 ---
 This project was deployed in github and then Heroku
