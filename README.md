@@ -72,4 +72,9 @@ This project was deployed in github and then Heroku
  ---
 
 
+## Credits
+---
+* Code Institute for deployment terminal
+* Google and other free websites for game idea
+---
    
