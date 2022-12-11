@@ -59,12 +59,17 @@ I have manually tested this project by doing the following steps:
 
 <img width="912" alt="Screenshot 2022-12-10 152734" src="https://user-images.githubusercontent.com/100950189/206898543-ff43ce8b-70ef-4dc2-a594-90233990c3a4.png">
 
-
-
-
-
-
+## Deployment
 ---
+This project was deployed in github and then Heroku
+
+* Steps for deployment:
+    * Fork or clone this repository
+    * Create a new Heroku app
+    * Set the buildbacks to ```Python``` and ```NodeJS``` in that order
+    * Link the Heroku app to the repository
+    * Click on **Deploy**
+ ---
 
 
    
