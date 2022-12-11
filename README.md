@@ -21,41 +21,16 @@ The rules are straightforward:
 <a href="https://rock-paper-scissor-game1.herokuapp.com/">Here is the live version of my project</a>
    <img width="942" alt="image" src="https://user-images.githubusercontent.com/100950189/206896619-755a6459-dcae-4e9b-a18b-db3bb129bd73.png">
    
-## Play a Single Game of Rock Paper Scissors in Python
-      
-   ![image](https://user-images.githubusercontent.com/100950189/188869275-d4672bbb-ec35-437b-8462-597dbc055525.png)
+   ## How it works
+   ---
+   The game is played with three possible hand signals that represent a rock, paper, and scissors.
+   The rock is a closed fist; paper is a flat hand with fingers and thumb extended and the palm facing downward;
+   and scissors is a fist with the index and middle fingers fully extended toward the opposing player.
+   Rock wins against scissors; paper wins against rock; and scissors wins against paper.
+   If both players throw the same hand signal, it is considered a tie, and play resumes until there is a clear winner.
    
    
- ## Take User Input
- 
-   ![image](https://user-images.githubusercontent.com/100950189/188869873-f34c9f4f-87a1-468b-9683-b8806753afd1.png)
-
- ## Make the Computer Choose
- 
-      I use random.choice() to have the computer randomly select between the actions:
-      
-   ![image](https://user-images.githubusercontent.com/100950189/188872639-d598ed4e-2e9a-4b8b-a03e-656a576c33ec.png)
    
- ## Show the WINNER
- 
-      Now that both side made their choice, you just need a way to decide who wins.
-      Using an if … elif … else block, you can compare players’ choices and determine a winner:
-      
-   ![image](https://user-images.githubusercontent.com/100950189/188873100-1317ace5-a0bb-45ff-85f7-c9958427a4df.png)
-   
-## AND FINAL RESULT
-
-  ![image](https://user-images.githubusercontent.com/100950189/188875608-95e2618a-6bee-49d5-a8f9-ea60e3bff3ba.png)
-  
-  ![image](https://user-images.githubusercontent.com/100950189/188900044-1c2e5f1c-26b8-4f1b-8b8e-18849a5952cc.png)
-
-
-## Testing
-     I have manually tested my application by running it on the command prompt. inserting a value and see the result.
-     I tested my python code on pep8online.com website, fixed some issues and below is the result after.
-![image](https://user-images.githubusercontent.com/100950189/188897586-d4eeefe5-42f0-4574-8d57-d2b1afe6445e.png)
-
-## Deployment
-      The deployment of the project is done on HeroKu application and the link for the live link is: https://rock-paper-scissor-game1.herokuapp.com/
+   ---
 
    
