@@ -18,7 +18,7 @@ The rules are straightforward:
    - Paper covers rock.
    - Scissors cut paper.
    
-   #Here is live site
+<a href="https://rock-paper-scissor-game1.herokuapp.com/">Here is the live version of my project</a>
    <img width="942" alt="image" src="https://user-images.githubusercontent.com/100950189/206896619-755a6459-dcae-4e9b-a18b-db3bb129bd73.png">
    
 ## Play a Single Game of Rock Paper Scissors in Python
