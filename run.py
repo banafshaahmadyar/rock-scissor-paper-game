@@ -2,12 +2,17 @@ import random
 
 player_score = 0
 computer_score = 0
-
+print("________________________________________________________________________")
+print("Welcome to (ROCK , SCISSOR , PAPER ) this is an amazing game .")
+print("That is singal player and has two side one side is player and other side is computer.")
+print("Your score will start from 0 and it will decrease if your choies is valid.")
+print("Good Luck!!!")
+print("________________________________________________________________________")
 
 def select_option():
     """
-    This function cheking value that entered from user 
-    if True run the program else rollback 
+    This function cheking value that entered from user
+    if True run the program else rollback
     """
 
     while True:
@@ -123,7 +128,7 @@ def check_computer_result(user, computer):
 while True:
 
     computer_select = Computer_option()
-    print("===================================================================")
+    print("")
     player_option = select_option()
 
     result = check_computer_result(player_option, computer_select)
@@ -138,7 +143,7 @@ while True:
         print("         Player score = " + str(player_score))
         print("         user score = " + str(computer_score))
         print("")
-    print("===================================================================")
+    print("_________________________________________________________________")
     # Here if player wanna play again or not
     if result != False:
         User_Choies = input("       Wanna play agian ?(Y/N)")
