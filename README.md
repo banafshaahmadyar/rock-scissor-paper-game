@@ -18,8 +18,7 @@ The rules are straightforward:
    - Paper covers rock.
    - Scissors cut paper.
    
-<a href="https://rock-paper-scissor-game1.herokuapp.com/">Here is the live version of my project</a>
-   <img width="942" alt="image" src="https://user-images.githubusercontent.com/100950189/206896619-755a6459-dcae-4e9b-a18b-db3bb129bd73.png">
+<img width="854" alt="image" src="https://user-images.githubusercontent.com/100950189/207932944-f4ff56ed-477f-4d46-8487-d4dd5b48dd77.png">   <img width="942" alt="image" src="https://user-images.githubusercontent.com/100950189/206896619-755a6459-dcae-4e9b-a18b-db3bb129bd73.png">
    
    ## How it works
    ---
