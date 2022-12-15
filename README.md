@@ -56,7 +56,6 @@ I have manually tested this project by doing the following steps:
 * PEP8
 * No error on PEP9
 
-<img width="545" alt="image" src="https://user-images.githubusercontent.com/100950189/207934003-da88be35-3a80-4896-b408-6d28c455f855.png">
 ## Deployment
 
 ---
