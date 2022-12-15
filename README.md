@@ -17,8 +17,7 @@ The rules are straightforward:
    - Rock smashes scissors.
    - Paper covers rock.
    - Scissors cut paper.
-   
-<img width="854" alt="image" src="https://user-images.githubusercontent.com/100950189/207932944-f4ff56ed-477f-4d46-8487-d4dd5b48dd77.png">   <img width="942" alt="image" src="https://user-images.githubusercontent.com/100950189/206896619-755a6459-dcae-4e9b-a18b-db3bb129bd73.png">
+   <img width="854" alt="image" src="https://user-images.githubusercontent.com/100950189/207933142-5f49a45e-bd9f-4b02-ad7d-32ddde2d3735.png">
    
    ## How it works
    ---
